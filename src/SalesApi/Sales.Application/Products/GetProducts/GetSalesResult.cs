@@ -1,0 +1,6 @@
+using Sales.Domain.Entities;
+
+namespace Sales.Application.Products.GetProducts;
+
+public record GetSalesResult(IEnumerable<Sale> sales);
+

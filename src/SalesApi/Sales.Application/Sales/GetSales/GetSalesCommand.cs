@@ -1,0 +1,16 @@
+using MediatR;
+
+namespace Sales.Application.Sales.GetSales;
+
+public record GetSalesCommand : IRequest<GetSalesResult>
+{
+    public GetSalesCommand(int? pageNumber, int? pageSize)
+    {
+        PageNumber = pageNumber;
+        PageSize = pageSize;
+    }
+
+    public int? PageNumber { get; set; } = 1;
+    public int? PageSize { get; set; } = 10;
+
+}

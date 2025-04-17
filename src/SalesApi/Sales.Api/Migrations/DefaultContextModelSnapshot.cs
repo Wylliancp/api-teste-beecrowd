@@ -79,6 +79,90 @@ namespace Sales.Api.Migrations
 
                     b.ToTable("Products", (string)null);
                 });
+
+            modelBuilder.Entity("Sales.Domain.Entities.Sale", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
+
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("SaleDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("SaleNumber")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sales", (string)null);
+                });
+
+            modelBuilder.Entity("Sales.Domain.Entities.SaleItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("SaleId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<decimal>("ValueMonetaryTaxApplied")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SaleId");
+
+                    b.ToTable("SaleItems", (string)null);
+                });
+
+            modelBuilder.Entity("Sales.Domain.Entities.SaleItem", b =>
+                {
+                    b.HasOne("Sales.Domain.Entities.Sale", "Sale")
+                        .WithMany("Items")
+                        .HasForeignKey("SaleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sale");
+                });
+
+            modelBuilder.Entity("Sales.Domain.Entities.Sale", b =>
+                {
+                    b.Navigation("Items");
+                });
 #pragma warning restore 612, 618
         }
     }
