@@ -28,16 +28,20 @@ public record CreateSalesCommand : IRequest<CreateSalesResult>
 
 public class CreateSaleItemCommand
 {
-    public CreateSaleItemCommand(Guid productId, decimal unitPrice, int quantity, string productName)
+    public CreateSaleItemCommand(Guid saleId, Guid productId, string productName, int quantity, decimal valueMonetaryTaxApplied, decimal unitPrice)
     {
+        SaleId = saleId;
         ProductId = productId;
-        UnitPrice = unitPrice;
-        Quantity = quantity;
         ProductName = productName;
+        UnitPrice = unitPrice;
+        ValueMonetaryTaxApplied = valueMonetaryTaxApplied;
+        Quantity = quantity;
     }
 
+    public Guid SaleId { get; set; }
     public Guid ProductId { get; set; }
     public string ProductName { get; set; }
-    public decimal UnitPrice { get; set; }
     public int Quantity { get; set; }
+    public decimal ValueMonetaryTaxApplied { get; set; }
+    public decimal UnitPrice { get; set; }
 }

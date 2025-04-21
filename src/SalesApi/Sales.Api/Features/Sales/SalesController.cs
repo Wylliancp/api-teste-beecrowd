@@ -15,7 +15,7 @@ namespace Sales.Api.Features.Sales;
 
 [ApiController]
 [Route("api/[controller]")]
-public class SalesController : BaseController
+public class SalesController : ControllerBase
 {
     private readonly IMediator _mediator;
     private readonly IMapper _mapper;

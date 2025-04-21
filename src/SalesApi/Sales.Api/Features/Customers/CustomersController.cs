@@ -13,7 +13,7 @@ namespace Sales.Api.Customers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CustomersController : BaseController
+public class CustomersController : ControllerBase
 {
     private readonly IMediator _mediator;
     private readonly IMapper _mapper;
