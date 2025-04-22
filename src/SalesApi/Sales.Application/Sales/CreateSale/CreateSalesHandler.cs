@@ -3,6 +3,7 @@ using FluentValidation;
 using MediatR;
 using Sales.Application.Products.CreateProduct;
 using Sales.Domain.Entities;
+using Sales.Domain.Events;
 using Sales.Domain.Repositories;
 
 namespace Sales.Application.Sales.CreateSale;
@@ -10,11 +11,13 @@ namespace Sales.Application.Sales.CreateSale;
 public class CreateSalesHandler : IRequestHandler<CreateSalesCommand, CreateSalesResult>
 {
     private readonly ISaleRepository _saleRepository;
+    private readonly ISaleEventHandler _saleEventHandler;
     private readonly IMapper _mapper;
 
-    public CreateSalesHandler(ISaleRepository saleRepository, IMapper mapper)
+    public CreateSalesHandler(ISaleRepository saleRepository, ISaleEventHandler saleEventHandler, IMapper mapper)
     {
         _saleRepository = saleRepository;
+        _saleEventHandler = saleEventHandler;
         _mapper = mapper;
     }
     public async Task<CreateSalesResult> Handle(CreateSalesCommand command, CancellationToken cancellationToken)
@@ -28,6 +31,9 @@ public class CreateSalesHandler : IRequestHandler<CreateSalesCommand, CreateSale
         var sale = _mapper.Map<Sale>(command);
 
         var createdUser = await _saleRepository.CreateAsync(sale, cancellationToken);
+        //queue
+        await _saleEventHandler.PublishSaleCreatedEvent(createdUser.Id, createdUser.CustomerId, createdUser.SaleDate, cancellationToken);
+        
         var result = _mapper.Map<CreateSalesResult>(createdUser);
         return result;
     }

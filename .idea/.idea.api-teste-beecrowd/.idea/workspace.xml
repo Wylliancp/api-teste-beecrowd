@@ -10,15 +10,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="[feat] - rotas mapping">
+    <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="[feat] - adjust DeleteSale for Cancelled Logic">
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Events/SaleEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/ISaleEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/IntegrationEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/SaleCancelledEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/SaleCreatedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/SaleItemCancelledEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/Sale.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/Sale.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Repositories/ISaleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Repositories/ISaleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Mapping/SaleConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Mapping/SaleConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Repositories/SaleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Repositories/SaleRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +37,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Wylliancp"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Wylliancp/api-teste-beecrowd.git",
+    "accountId": "b2a4d766-486b-422e-be02-6ed041b4e3e1"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c05a9f56cce41eba9451cc4a5a099cce000/51/5c7ce295/IHostEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8dbf2e4204a4497b2061a48f87ada3626aa20/da/3991677f/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -45,6 +63,7 @@
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SalesApi/Sales.Api/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -74,6 +93,7 @@
     ".NET Launch Settings Profile.General.Gateway: http.executor": "Run",
     ".NET Launch Settings Profile.Products.Api: http.executor": "Run",
     ".NET Launch Settings Profile.Products.Api: https.executor": "Debug",
+    ".NET Launch Settings Profile.Sales.Api: http.executor": "Debug",
     "Docker.General.Gateway/Dockerfile.executor": "Run",
     "Docker.docker-compose.override.yml: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
@@ -262,7 +282,7 @@
       <workItem from="1744860188813" duration="254000" />
       <workItem from="1744893766754" duration="163000" />
       <workItem from="1744893935857" duration="17868000" />
-      <workItem from="1745263095607" duration="22349000" />
+      <workItem from="1745263095607" duration="31136000" />
     </task>
     <task id="LOCAL-00001" summary="[feat] - first commit, controllers(customer, product)">
       <option name="closed" value="true" />
@@ -312,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745316864445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[feat] - adjust DeleteSale for Cancelled Logic">
+      <option name="closed" value="true" />
+      <created>1745332065713</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745332065714</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +356,8 @@
     <MESSAGE value="[bugfix] - adjust docker-compose" />
     <MESSAGE value="[feat] - Gateway OK" />
     <MESSAGE value="[feat] - rotas mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] - rotas mapping" />
+    <MESSAGE value="[feat] - adjust DeleteSale for Cancelled Logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] - adjust DeleteSale for Cancelled Logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -348,13 +377,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs</url>
-          <line>21</line>
+          <line>24</line>
           <properties documentPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" containingFunctionPresentation="Method 'Handle'">
             <startOffsets>
-              <option value="684" />
+              <option value="851" />
             </startOffsets>
             <endOffsets>
-              <option value="734" />
+              <option value="901" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

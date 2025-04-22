@@ -26,10 +26,14 @@ services:
     container_name: sales-api
     depends_on:
       - db
+      - sales-queue
     ports:
       - "8090:8080"
     environment:
       - ConnectionStrings__DefaultConnection=Host=db;Database=SalesApiDb;Username=postgres;Password=admin
+      - RabbitMQ__Host=sales-queue
+      - RabbitMQ__Username=developer
+      - RabbitMQ__Password=ev@luAt10n
     networks:
       - evaluation-network
     tty: true
@@ -45,7 +49,19 @@ services:
       - "5432:5432"
     networks:
       - evaluation-network
-
+      
+  sales-queue:
+    image: rabbitmq:3-management
+    container_name: sales-queue
+    environment:
+      RABBITMQ_DEFAULT_USER: developer
+      RABBITMQ_DEFAULT_PASS: ev@luAt10n
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - evaluation-network
+      
 networks:
   evaluation-network:
     driver: bridge  
