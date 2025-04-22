@@ -16,7 +16,7 @@ public class Sale
         BranchId = Guid.NewGuid();
         SaleNumber = new Random().Next(100000, 999999).ToString();
         SaleDate = DateTime.UtcNow;
-        // Status = StatusSale.NOT_CANCELLED;
+        Status = StatusSale.NOT_CANCELLED;
         Items = items;
     }
     public Guid Id { get; private set; }
@@ -29,11 +29,11 @@ public class Sale
     public decimal TotalPrice  => Items.Sum(x => x.UnitPrice * x.Quantity) 
                                   - Items.Sum(x => x.ValueMonetaryTaxApplied);
     
-    // public StatusSale Status { get; private set; } = default!;
+    public StatusSale Status { get; private set; } = default!;
 
 
-    // public void DeleteSaleStatus()
-    // {
-    //     Status = StatusSale.CANCELLED;
-    // } 
+    public void CancelledSaleStatus()
+    {
+        Status = StatusSale.CANCELLED;
+    } 
 }

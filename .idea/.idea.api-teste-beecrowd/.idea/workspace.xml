@@ -10,9 +10,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="">
+    <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="[feat] - rotas mapping">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-teste-beecrowd.sln" beforeDir="false" afterPath="$PROJECT_DIR$/api-teste-beecrowd.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/Sale.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/Sale.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Repositories/ISaleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Repositories/ISaleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Mapping/SaleConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Mapping/SaleConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Repositories/SaleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Repositories/SaleRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +32,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c05a9f56cce41eba9451cc4a5a099cce000/51/5c7ce295/IHostEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8dbf2e4204a4497b2061a48f87ada3626aa20/da/3991677f/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b445ceb1c5ab1d07b7b55412b10a5e21169ec87228ca8ad8a18a6982f3278/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/821414cb3ac8c919592aa4099446193f1577b40ae3a5629a553c028d0b1fdd6/KeyNotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/db7395f4add94e6d10e515b3e55373f2821f8323de7dc8e314d78feefacf5584/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ed259e49cc3bb2398585cae8e4dffc366721e02a8b027d8a6b4985e3f1f8316/Type.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f0c16cda8a141e194c9151fd8f6acd0f93ef39e54a2a250baf2e5b2fa1fac6/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4bc324a395d24ed12db75b0a81536b642509aa14825bf114d9b7c934e2b/Mediator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SalesApi/Sales.Api/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/Sale.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Repositories/ISaleRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Infrastructure/Mapping/SaleConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Infrastructure/Repositories/SaleRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///usr/local/share/dotnet/x64/sdk/9.0.101/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_5_all.globalconfig" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -49,9 +71,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.General.Gateway: http.executor": "Run",
     ".NET Launch Settings Profile.Products.Api: http.executor": "Run",
     ".NET Launch Settings Profile.Products.Api: https.executor": "Debug",
+    "Docker.General.Gateway/Dockerfile.executor": "Run",
+    "Docker.docker-compose.override.yml: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.gateway: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
@@ -63,7 +90,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Sales.Api: https">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="General.Gateway: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Gateway/General.Gateway/General.Gateway.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -124,9 +151,52 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="General.Gateway/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="general.gateway" />
+          <option name="containerName" value="general.gateway" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Gateway/General.Gateway/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.override.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.override.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
@@ -145,15 +215,36 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="gateway" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.General.Gateway: http" />
       <item itemvalue=".NET Launch Settings Profile.General.Gateway: https" />
       <item itemvalue=".NET Launch Settings Profile.Sales.Api: http" />
       <item itemvalue=".NET Launch Settings Profile.Sales.Api: https" />
+      <item itemvalue="Docker.General.Gateway/Dockerfile" />
+      <item itemvalue="Docker.docker-compose.override.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.gateway: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.override.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.gateway: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -171,6 +262,7 @@
       <workItem from="1744860188813" duration="254000" />
       <workItem from="1744893766754" duration="163000" />
       <workItem from="1744893935857" duration="17868000" />
+      <workItem from="1745263095607" duration="22349000" />
     </task>
     <task id="LOCAL-00001" summary="[feat] - first commit, controllers(customer, product)">
       <option name="closed" value="true" />
@@ -196,7 +288,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745260542585</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[bugfix] - adjust docker-compose">
+      <option name="closed" value="true" />
+      <created>1745288775045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745288775045</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[feat] - Gateway OK">
+      <option name="closed" value="true" />
+      <created>1745314595572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745314595572</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[feat] - rotas mapping">
+      <option name="closed" value="true" />
+      <created>1745316864445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745316864445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +325,10 @@
     <MESSAGE value="[feat] - first commit, controllers(customer, product)" />
     <MESSAGE value="[feat] - Commit Methods SALES" />
     <MESSAGE value="[bugfix] - adjustment in controllers and sales methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="[bugfix] - adjustment in controllers and sales methods" />
+    <MESSAGE value="[bugfix] - adjust docker-compose" />
+    <MESSAGE value="[feat] - Gateway OK" />
+    <MESSAGE value="[feat] - rotas mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] - rotas mapping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

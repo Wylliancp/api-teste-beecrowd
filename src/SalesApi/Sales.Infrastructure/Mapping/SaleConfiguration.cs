@@ -22,6 +22,10 @@ public class SaleConfiguration : IEntityTypeConfiguration<Sale>
                 v => v.ToUniversalTime(), // Converter para UTC ao salvar
                 v => DateTime.SpecifyKind(v, DateTimeKind.Utc)); // Converter para UTC ao carregar
          
+        builder.Property(s => s.Status)
+             .IsRequired()
+             .HasConversion<string>(); // Converte o enum para string no banco de dados
+         
         builder.HasMany(s => s.Items)
             .WithOne(p => p.Sale)
             .HasForeignKey(j => j.SaleId)

@@ -41,7 +41,7 @@ public class SaleItem
         Total = (UnitPrice * Quantity) - ValueMonetaryTaxApplied;
     }
 
-    public void DeleteSaleItemStatus()
+    public void CancelledSaleItemStatus()
     {
         Status = StatusSale.CANCELLED;
     }
