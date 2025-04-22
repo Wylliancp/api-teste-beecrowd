@@ -1,11 +1,11 @@
 #version: '3.3'
-
+    
 services:
   gateway:
-    image: ocelot-gateway
+    image: gateway
     build:
       context: .
-      dockerfile: src/Gateway/Dockerfile
+      dockerfile: src/Gateway/General.Gateway/Dockerfile
     container_name: ocelot-gateway
     ports:
       - "0.0.0.0:7777:7777"
@@ -20,14 +20,14 @@ services:
     image: sales-api
     build:
       context: .
-      dockerfile: src/SalesApi/Dockerfile
+      dockerfile: src/SalesApi/Sales.Api/Dockerfile
     container_name: sales-api
     depends_on:
       - db
     ports:
-      - "8090:8090"
+      - "8090:8080"
     environment:
-      - ConnectionStrings__SalesApiDb=Host=db;Database=SalesApiDb;Username=postgres;Password=admin
+      - ConnectionStrings__DefaultConnection=Host=db;Database=SalesApiDb;Username=postgres;Password=admin
     networks:
       - evaluation-network
     tty: true
@@ -41,10 +41,9 @@ services:
       POSTGRES_PASSWORD: admin
     ports:
       - "5432:5432"
-#    networks:
-#      - evaluation-network
+    networks:
+      - evaluation-network
 
 networks:
   evaluation-network:
-    external: true
-  
+    driver: bridge  

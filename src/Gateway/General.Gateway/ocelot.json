@@ -1,0 +1,36 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Customers",
+      "UpstreamPathTemplate": "/api/Customers",
+      "UpstreamHttpMethod": [ "Post" ],
+      "Priority": 0,
+      "Key": "Sales",
+      "ServiceName": "sales-api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Customers/{id}",
+      "UpstreamPathTemplate": "/api/Customers/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Priority": 0,
+      "Key": "Sales",
+      "ServiceName": "sales-api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Customers/{id}",
+      "UpstreamPathTemplate": "/api/Customers/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "Priority": 0,
+      "Key": "Sales",
+      "ServiceName": "sales-api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Products/{id}",
+      "UpstreamPathTemplate": "/api/Products/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Priority": 0,
+      "Key": "Sales",
+      "ServiceName": "sales-api"
+    }
+  ]
+}
