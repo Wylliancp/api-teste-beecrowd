@@ -11,6 +11,8 @@ services:
       - "0.0.0.0:7777:7777"
     environment:
       - ASPNETCORE_URLS=http://+:7777
+      - ASPNETCORE_ENVIRONMENT=Containers
+#      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - sales-api
     networks:

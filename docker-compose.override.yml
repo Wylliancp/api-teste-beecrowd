@@ -3,7 +3,8 @@
 services:
   gateway:
     environment:
-      #      - ASPNETCORE_ENVIRONMENT=Development via docker-compose!
+      - ASPNETCORE_ENVIRONMENT=Containers
+#      - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=7777
     ports:
       - "7777:7777"
