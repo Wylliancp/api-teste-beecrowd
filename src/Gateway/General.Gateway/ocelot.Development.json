@@ -13,7 +13,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/Customers",
       "UpstreamHttpMethod": [ "Post" ],
-      "Priority": 2,
+      "Priority": 3,
       "Key": "Sales"
     },
     {
@@ -22,13 +22,13 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 8090
+          "Host": "sales-api",
+            "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/Customers/{id}",
       "UpstreamHttpMethod": [ "Get" ],
-      "Priority": 1,
+      "Priority": 2,
       "Key": "Sales"
     },
     {
@@ -43,7 +43,7 @@
       ],
       "UpstreamPathTemplate": "/api/Customers/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
-      "Priority": 0,
+      "Priority": 1,
       "Key": "Sales"
     },
     {
