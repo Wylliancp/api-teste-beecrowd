@@ -7,7 +7,7 @@ public class CreateSalesRequestValidator : AbstractValidator<CreateSalesRequest>
 {
     public CreateSalesRequestValidator()
     {
-        RuleFor(x => x.CustomerId).NotEmpty().WithMessage("Customer is required");
+        RuleFor(x => x.CustomerId).NotEmpty().WithMessage("Sales is required");
         RuleFor(x => x.Items).NotEmpty().WithMessage("Items is required");
     }
 }

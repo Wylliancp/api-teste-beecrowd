@@ -10,21 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="[feat] - adjust DeleteSale for Cancelled Logic">
-      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Events/SaleEventHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/ISaleEventHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/IntegrationEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/SaleCancelledEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/SaleCreatedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Domain/Events/SaleItemCancelledEvent.cs" afterDir="false" />
+    <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="[feat] - config queue (Sales - Created and Cancelled)">
+      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/CustomerTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/ProductTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/SaleItemTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/SaleTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-teste-beecrowd.sln" beforeDir="false" afterPath="$PROJECT_DIR$/api-teste-beecrowd.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Features/Sales/CreateSales/CreateSalesRequestValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Features/Sales/CreateSales/CreateSalesRequestValidator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,11 @@
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SalesApi/Sales.Api/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/Sale.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -282,7 +279,7 @@
       <workItem from="1744860188813" duration="254000" />
       <workItem from="1744893766754" duration="163000" />
       <workItem from="1744893935857" duration="17868000" />
-      <workItem from="1745263095607" duration="31136000" />
+      <workItem from="1745263095607" duration="35195000" />
     </task>
     <task id="LOCAL-00001" summary="[feat] - first commit, controllers(customer, product)">
       <option name="closed" value="true" />
@@ -340,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745332065714</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[feat] - config queue (Sales - Created and Cancelled)">
+      <option name="closed" value="true" />
+      <created>1745345649669</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745345649669</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +362,8 @@
     <MESSAGE value="[feat] - Gateway OK" />
     <MESSAGE value="[feat] - rotas mapping" />
     <MESSAGE value="[feat] - adjust DeleteSale for Cancelled Logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] - adjust DeleteSale for Cancelled Logic" />
+    <MESSAGE value="[feat] - config queue (Sales - Created and Cancelled)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] - config queue (Sales - Created and Cancelled)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
