@@ -10,7 +10,6 @@ public class ApplicationModuleInitializer : IModuleInitializer
 {
     public void Initialize(WebApplicationBuilder builder)
     {
-        
         builder.Services.AddAutoMapper(typeof(Program).Assembly, typeof(ApplicationLayer).Assembly);
 
         builder.Services.AddMediatR(cfg =>
@@ -33,11 +32,12 @@ public class ApplicationModuleInitializer : IModuleInitializer
         {
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(rabbitMqHost, ushort.Parse(rabbitMqPort), "/", h =>
-                {
-                    h.Username(rabbitMqUsername);
-                    h.Password(rabbitMqPassword);
-                });
+                if (rabbitMqPort != null)
+                    cfg.Host(rabbitMqHost, ushort.Parse(rabbitMqPort), "/", h =>
+                    {
+                        if (rabbitMqUsername != null) h.Username(rabbitMqUsername);
+                        if (rabbitMqPassword != null) h.Password(rabbitMqPassword);
+                    });
             });
         });
     }
