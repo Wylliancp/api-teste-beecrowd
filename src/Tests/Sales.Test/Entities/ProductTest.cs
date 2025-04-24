@@ -2,13 +2,13 @@ using Sales.Domain.Entities;
 
 namespace Sales.Test.Entities;
 
-public class ProductTest
+public sealed class ProductTest
 {
-    const string Name = "teste unitario";
-    const string Category = "teste unitario"; 
-    const string Description = "teste unitario"; 
-    const string ImageFile = "teste unitario";
-    const decimal Price = 100;
+    private const string Name = "teste unitario";
+    private const string Category = "teste unitario"; 
+    private const string Description = "teste unitario"; 
+    private const string ImageFile = "teste unitario";
+    private const decimal Price = 100;
 
     [Fact]
     public void ProductPrice100()

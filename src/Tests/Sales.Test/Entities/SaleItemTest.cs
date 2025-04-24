@@ -3,15 +3,15 @@ using Sales.Domain.Enums;
 
 namespace Sales.Test.Entities;
 
-public class SaleItemTest
+public sealed class SaleItemTest
 {
-    static Guid ProductId = Guid.NewGuid();
-    static Guid SaledId = Guid.NewGuid();
-    const string? ProductName = "teste unitario";
-    const int Quantity = 5;
-    const decimal ValueMonetaryTaxApplied = 100;
-    const decimal UnitPrice = 2000;
-    const StatusSale Status = StatusSale.NOT_CANCELLED;
+    private static readonly Guid ProductId = Guid.NewGuid();
+    private static readonly Guid SaledId = Guid.NewGuid();
+    private const string? ProductName = "teste unitario";
+    private const int Quantity = 5;
+    private const decimal ValueMonetaryTaxApplied = 100;
+    private const decimal UnitPrice = 2000;
+    private const StatusSale Status = StatusSale.NOT_CANCELLED;
     
     [Fact]
     public void AddValueTotal()

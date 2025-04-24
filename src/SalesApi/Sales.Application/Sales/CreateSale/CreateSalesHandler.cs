@@ -29,7 +29,10 @@ public class CreateSalesHandler : IRequestHandler<CreateSalesCommand, CreateSale
             throw new ValidationException(validationResult.Errors);
 
         var sale = _mapper.Map<Sale>(command);
-
+        
+        if(sale.ItNotPossibleToSellAbove20IdenticalItems())
+            throw new ValidationException("It is not possible to sell more than 20 identical items.");
+        
         var createdUser = await _saleRepository.CreateAsync(sale, cancellationToken);
         //queue
         await _saleEventHandler.PublishSaleCreatedEvent(createdUser.Id, createdUser.CustomerId, createdUser.SaleDate, cancellationToken);

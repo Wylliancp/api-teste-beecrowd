@@ -2,7 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Sales.Test.Entities;
 
-public class CustomerTest
+public sealed class CustomerTest
 {
     private const string Name = "Teste";
     
@@ -16,7 +16,7 @@ public class CustomerTest
     [Fact]
     public void CustomerOk()
     {
-        var customer = new Sales.Domain.Entities.Customer(string.Empty);
+        var customer = new Sales.Domain.Entities.Customer(Name);
         Assert.NotNull(customer);
     }
 }
