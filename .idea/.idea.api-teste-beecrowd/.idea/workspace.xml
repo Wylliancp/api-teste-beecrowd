@@ -11,13 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14418933-e853-4cd2-94d0-4e6db1128857" name="Changes" comment="[feat] - config queue (Sales - Created and Cancelled)">
-      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/CustomerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/ProductTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/SaleItemTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Sales.Test/Entities/SaleTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250417030703_InitialCreate3.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250417030703_InitialCreate3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250417031931_InitialCreate4.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250417031931_InitialCreate4.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250422142227_InitialCreate5.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250422142227_InitialCreate5.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api-teste-beecrowd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-teste-beecrowd.sln" beforeDir="false" afterPath="$PROJECT_DIR$/api-teste-beecrowd.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Features/Sales/CreateSales/CreateSalesRequestValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Features/Sales/CreateSales/CreateSalesRequestValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/IoC/MigrationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Api/IoC/MigrationExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/20250416123948_InitialCreate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250416123948_InitialCreate.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/20250416123948_InitialCreate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/20250416123948_InitialCreate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SalesApi/Sales.Infrastructure/Migrations/DefaultContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,24 +35,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Wylliancp"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Wylliancp&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Wylliancp/api-teste-beecrowd.git",
-    "accountId": "b2a4d766-486b-422e-be02-6ed041b4e3e1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Wylliancp/api-teste-beecrowd.git&quot;,
+    &quot;accountId&quot;: &quot;b2a4d766-486b-422e-be02-6ed041b4e3e1&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/Teste Técnico - ABI/template/backend/src/Ambev.DeveloperEvaluation.IoC/ModuleInitializers/ApplicationModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c05a9f56cce41eba9451cc4a5a099cce000/51/5c7ce295/IHostEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8dbf2e4204a4497b2061a48f87ada3626aa20/da/3991677f/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b445ceb1c5ab1d07b7b55412b10a5e21169ec87228ca8ad8a18a6982f3278/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/393e5c61f45111b96c555e0fc4998665295af303db45491f25c21c20739d53/RelationalDatabaseFacadeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ad82f9910d5c82d76b445db10584a60305639dcad2533e08e6c47f85e3b6d83/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b92f859131bde25d0f7a63de08963e995d1e1426e584dfd4b8e833d2d3dba/ExecutionTimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/70baba8310ad3189be4126a931c91dadcb1ef332cfb351aa303f69d153d867/Count.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d81b2d4f22bee75e5438c707251ae43cb0974c207db91ffc159118c84b4eb9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/821414cb3ac8c919592aa4099446193f1577b40ae3a5629a553c028d0b1fdd6/KeyNotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/be6e1abbf5fe16676fc5dbf3473795ec443ed8e2d215698ae3d4ac81f99298a/EqualityAsserts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3ec25c53b94f51fa21da479c513e551efee2b5ae49a79934686d2bb714d46/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/db7395f4add94e6d10e515b3e55373f2821f8323de7dc8e314d78feefacf5584/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b3bf527769cb3295444e29d617bf2ebe5666bbe8e9c881a31444ba66846cfa/BooleanAsserts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e747192abb38e2df82cbdb37e721567726f559914a7b81f8b26ba537de632f4/List.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecab325115db3ffa25a54de7ba09255db9b137b26989a131838fd26b8855/SelectMany.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ed259e49cc3bb2398585cae8e4dffc366721e02a8b027d8a6b4985e3f1f8316/Type.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f0c16cda8a141e194c9151fd8f6acd0f93ef39e54a2a250baf2e5b2fa1fac6/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4bc324a395d24ed12db75b0a81536b642509aa14825bf114d9b7c934e2b/Mediator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,19 +72,48 @@
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Gateway/General.Gateway/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Features/Sales/CreateSales/CreateSalesRequestValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Features/Sales/CreateSales/CreateSalesRequestValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/MigrationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/MigrationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/MigrationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/ApplicationModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/InfrastructureModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/InfrastructureModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/InfrastructureModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/InfrastructureModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/InfrastructureModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/IoC/ModuleInitializers/InfrastructureModuleInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Migrations/DefaultContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SalesApi/Sales.Api/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/CreateSale/CreateSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Application/Sales/DeleteSale/DeleteSalesHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/Sale.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/Sale.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Entities/SaleItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Domain/Repositories/ISaleRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Infrastructure/DefaultContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Infrastructure/DefaultContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Infrastructure/Mapping/SaleConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/SalesApi/Sales.Infrastructure/Repositories/SaleRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/CustomerTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/ProductTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/ProductTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/SaleItemTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/SaleItemTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/SaleTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wylliancp/projetos/api-teste-beecrowd/src/Tests/Sales.Test/Entities/SaleTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///usr/local/share/dotnet/x64/sdk/9.0.101/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_5_all.globalconfig" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -90,7 +135,7 @@
     ".NET Launch Settings Profile.General.Gateway: http.executor": "Run",
     ".NET Launch Settings Profile.Products.Api: http.executor": "Run",
     ".NET Launch Settings Profile.Products.Api: https.executor": "Debug",
-    ".NET Launch Settings Profile.Sales.Api: http.executor": "Debug",
+    ".NET Launch Settings Profile.Sales.Api: http.executor": "Run",
     "Docker.General.Gateway/Dockerfile.executor": "Run",
     "Docker.docker-compose.override.yml: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
@@ -107,7 +152,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Sales.Api: http">
     <configuration name="General.Gateway: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Gateway/General.Gateway/General.Gateway.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -197,7 +242,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.override.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -259,10 +307,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.override.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.gateway: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

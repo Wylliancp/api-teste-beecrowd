@@ -9,7 +9,7 @@ using Sales.Infrastructure;
 
 #nullable disable
 
-namespace Sales.Api.Migrations
+namespace Sales.Infrastructure.Migrations
 {
     [DbContext(typeof(DefaultContext))]
     [Migration("20250416123948_InitialCreate")]

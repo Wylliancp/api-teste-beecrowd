@@ -8,7 +8,7 @@ using Sales.Infrastructure;
 
 #nullable disable
 
-namespace Sales.Api.Migrations
+namespace Sales.Infrastructure.Migrations
 {
     [DbContext(typeof(DefaultContext))]
     partial class DefaultContextModelSnapshot : ModelSnapshot
