@@ -2,7 +2,7 @@ namespace Sales.Application.Customers.GetCustomer;
 
 public class GetCustomerResult
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; init; }
 
-    public string Name { get; set; } = string.Empty;
+    public string Name { get; init; } = string.Empty;
 }

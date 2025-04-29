@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace Sales.Api.Customers.DeleteCustomer;
+namespace Sales.Api.Features.Customers.DeleteCustomer;
 
 public class DeleteCustomerRequestValidator : AbstractValidator<DeleteCustomerRequest>
 {

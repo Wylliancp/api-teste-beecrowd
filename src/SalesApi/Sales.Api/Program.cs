@@ -1,4 +1,3 @@
-using Customers.Api.IoC;
 using Sales.Api.IoC;
 
 var builder = WebApplication.CreateBuilder(args);

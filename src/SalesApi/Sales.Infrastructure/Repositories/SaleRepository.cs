@@ -63,7 +63,7 @@ public class SaleRepository : ISaleRepository
     public async Task<List<Sale>?> GetAllAsync(CancellationToken cancellationToken = default)
     {
         return await _context.Sales.Include(x => x.Items)
-            .Where(x => x.Status == StatusSale.NOT_CANCELLED)//TODO??
+            .Where(x => x.Status == StatusSale.NotCancelled)//TODO??
             .AsQueryable()
             .ToListAsync(cancellationToken);
     }

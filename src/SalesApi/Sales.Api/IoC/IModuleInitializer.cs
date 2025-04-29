@@ -1,4 +1,4 @@
-﻿namespace Customers.Api.IoC;
+﻿namespace Sales.Api.IoC;
 
 public interface IModuleInitializer
 {

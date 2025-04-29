@@ -11,7 +11,7 @@ public sealed class SaleItemTest
     private const int Quantity = 5;
     private const decimal ValueMonetaryTaxApplied = 100;
     private const decimal UnitPrice = 2000;
-    private const StatusSale Status = StatusSale.NOT_CANCELLED;
+    private const StatusSale Status = StatusSale.NotCancelled;
     
     [Fact]
     public void AddValueTotal()
@@ -25,6 +25,6 @@ public sealed class SaleItemTest
     {
         SaleItem saleItem = new SaleItem(ProductId, SaledId, ProductName, Quantity, ValueMonetaryTaxApplied, UnitPrice);
         saleItem.CancelledSaleItemStatus();
-        Assert.Equal(StatusSale.CANCELLED, saleItem.Status);
+        Assert.Equal(StatusSale.Cancelled, saleItem.Status);
     }
 }

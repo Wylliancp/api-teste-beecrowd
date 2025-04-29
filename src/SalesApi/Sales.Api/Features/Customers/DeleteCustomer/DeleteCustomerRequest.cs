@@ -1,6 +1,6 @@
-namespace Sales.Api.Customers.DeleteCustomer;
+namespace Sales.Api.Features.Customers.DeleteCustomer;
 
 public class DeleteCustomerRequest
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; init; }
 }

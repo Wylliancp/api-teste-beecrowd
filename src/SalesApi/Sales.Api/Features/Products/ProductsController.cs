@@ -1,19 +1,19 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Sales.Api.Common;
+using Sales.Api.Features.Products.CreateProduct;
+using Sales.Api.Features.Products.DeleteProduct;
+using Sales.Api.Features.Products.GetProduct;
+using Sales.Api.Features.Products.GetProducts;
+using Sales.Api.Features.Products.UpdateProduct;
 using Sales.Application.Products.CreateProduct;
 using Sales.Application.Products.DeleteProduct;
 using Sales.Application.Products.GetProduct;
 using Sales.Application.Products.GetProducts;
 using Sales.Application.Products.UpdateProduct;
-using Sales.Api.Common;
-using Sales.Api.Products.CreateProducts;
-using Sales.Api.Products.DeleteProducts;
-using Sales.Api.Products.GetProduct;
-using Sales.Api.Products.GetProducts;
-using Sales.Api.Products.UpdateProducts;
 
-namespace Sales.Api.Products;
+namespace Sales.Api.Features.Products;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -29,39 +29,39 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPost]
-    [ProducesResponseType(typeof(ApiResponseWithData<CreateProductsResponse>), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ApiResponseWithData<CreateProductResponse>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> CreateProducts([FromBody] CreateProductsRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateProducts([FromBody] CreateProductRequest request, CancellationToken cancellationToken)
     {
-        var validator = new CreateProductsRequestValidator();
+        var validator = new CreateProductRequestValidator();
         var validationResult = await validator.ValidateAsync(request, cancellationToken);
 
         if (!validationResult.IsValid)
             return BadRequest(validationResult.Errors);
 
-        var command = _mapper.Map<CreateProductsCommand>(request);
+        var command = _mapper.Map<CreateProductCommand>(request);
         var response = await _mediator.Send(command, cancellationToken);
 
-        return Created(string.Empty, new ApiResponseWithData<CreateProductsResponse>
+        return Created(string.Empty, new ApiResponseWithData<CreateProductResponse>
         {
             Success = true,
-            Message = "User created successfully",
-            Data = _mapper.Map<CreateProductsResponse>(response)
+            Message = "Product created successfully",
+            Data = _mapper.Map<CreateProductResponse>(response)
         });
     }
 
     [HttpPut]
     [ProducesResponseType(typeof(ApiResponseWithData<UpdatePorductsResponse>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> UpdateProduct([FromBody] UpdateProductsRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> UpdateProduct([FromBody] UpdateProductRequest request, CancellationToken cancellationToken)
     {
-        var validator = new UpdateProductsRequestValidator();
+        var validator = new UpdateProductRequestValidator();
         var validationResult = await validator.ValidateAsync(request, cancellationToken);
 
         if (!validationResult.IsValid)
             return BadRequest(validationResult.Errors);
 
-        var command = _mapper.Map<UpdateProductsCommand>(request);
+        var command = _mapper.Map<UpdateProductCommand>(request);
         var response = await _mediator.Send(command, cancellationToken);
 
         return Ok(new ApiResponseWithData<UpdatePorductsResponse>
@@ -91,7 +91,7 @@ public class ProductsController : ControllerBase
         return Ok(new ApiResponseWithData<GetProductResponse>
         {
             Success = true,
-            Message = "User retrieved successfully",
+            Message = "Product retrieved successfully",
             Data = _mapper.Map<GetProductResponse>(response)
         });
     }
@@ -126,20 +126,20 @@ public class ProductsController : ControllerBase
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
     public async Task<IActionResult> DeleteProducts([FromRoute] Guid id, CancellationToken cancellationToken)
     {
-        var request = new DeleteProductsRequest { Id = id };
-        var validator = new DeleteProductsRequestValidator();
+        var request = new DeleteProductRequest { Id = id };
+        var validator = new DeleteProductRequestValidator();
         var validationResult = await validator.ValidateAsync(request, cancellationToken);
 
         if (!validationResult.IsValid)
             return BadRequest(validationResult.Errors);
 
-        var command = _mapper.Map<DeleteProductsCommand>(request.Id);
+        var command = _mapper.Map<DeleteProductCommand>(request.Id);
         await _mediator.Send(command, cancellationToken);
 
         return Ok(new ApiResponse
         {
             Success = true,
-            Message = "User deleted successfully"
+            Message = "Product deleted successfully"
         });
     }
 }

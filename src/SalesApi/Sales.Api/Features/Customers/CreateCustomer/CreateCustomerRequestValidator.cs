@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Sales.Api.Customers.CreateCustomer;
+namespace Sales.Api.Features.Customers.CreateCustomer;
 
 public class CreateCustomerRequestValidator : AbstractValidator<CreateCustomerRequest>
 {

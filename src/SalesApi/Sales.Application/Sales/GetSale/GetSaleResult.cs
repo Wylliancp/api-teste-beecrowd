@@ -13,13 +13,13 @@ public class GetSaleResult{
         TotalPrice = totalPrice;
         Items = items;
     }
-    public Guid Id { get; set; }
+    public Guid Id { get; init; }
     public string SaleNumber { get; private set; }
     public DateTime SaleDate { get; private set; }
     public Guid CustomerId { get; private set; }
     public Guid BranchId { get; private set; }
-    public decimal TotalPrice { get; set; }
-    public List<GetSaleItemResult> Items { get; set; }
+    public decimal TotalPrice { get; init; }
+    public List<GetSaleItemResult> Items { get; init; }
 }
 
 public class GetSaleItemResult
@@ -35,12 +35,12 @@ public class GetSaleItemResult
         SaleId = saleId;
     }
 
-    public Guid Id { get; set; }
-    public Guid ProductId { get; set; }
-    public int Quantity { get; set; }
-    public decimal UnitPrice { get; set; }
-    public decimal ValueMonetaryTaxApplied { get; set; }
-    public decimal Total { get; set; }
-    public Guid SaleId { get; set; }
+    public Guid Id { get; init; }
+    public Guid ProductId { get; init; }
+    public int Quantity { get; init; }
+    public decimal UnitPrice { get; init; }
+    public decimal ValueMonetaryTaxApplied { get; init; }
+    public decimal Total { get; init; }
+    public Guid SaleId { get; init; }
 }
 

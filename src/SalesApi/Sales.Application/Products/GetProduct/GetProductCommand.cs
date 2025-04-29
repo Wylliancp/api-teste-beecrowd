@@ -9,6 +9,6 @@ public class GetProductCommand : IRequest<GetProductResult>
         Id = id;
     }
 
-    public Guid Id { get; set; }
+    public Guid Id { get; init; }
 
 }

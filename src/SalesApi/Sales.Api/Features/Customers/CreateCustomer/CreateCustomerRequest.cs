@@ -1,4 +1,4 @@
-﻿namespace Sales.Api.Customers.CreateCustomer;
+﻿namespace Sales.Api.Features.Customers.CreateCustomer;
 
 public class CreateCustomerRequest
 {

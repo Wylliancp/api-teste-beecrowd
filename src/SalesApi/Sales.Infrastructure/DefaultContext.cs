@@ -8,12 +8,12 @@ namespace Sales.Infrastructure;
 
 public class DefaultContext : DbContext
 {
-    public DbSet<Product> Products { get; set; }
-    public DbSet<Customer> Customers { get; set; }
+    public DbSet<Product> Products { get; init; }
+    public DbSet<Customer> Customers { get; init; }
     
-    public DbSet<Sale> Sales { get; set; }
+    public DbSet<Sale> Sales { get; init; }
     
-    public DbSet<SaleItem> SaleItems { get; set; }
+    public DbSet<SaleItem> SaleItems { get; init; }
 
     public DefaultContext(DbContextOptions<DefaultContext> options) : base(options)
     {

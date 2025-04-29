@@ -6,14 +6,14 @@ namespace Sales.Test.Entities;
 public sealed class SaleTest
 {
     private readonly Guid _customerId = Guid.NewGuid();
-    private List<SaleItem> Items { get; set; } = new();
+    private List<SaleItem> Items { get; } = new();
     
     [Fact]
     public void CancelledSaleStatus()
     {
         var sale = new Sale(_customerId, Items);
         sale.CancelledSaleStatus();
-        Assert.Equal(StatusSale.CANCELLED, sale.Status);
+        Assert.Equal(StatusSale.Cancelled, sale.Status);
     } 
     
     [Fact]

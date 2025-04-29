@@ -2,14 +2,14 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Sales.Api.Common;
-using Sales.Api.Customers.CreateCustomer;
-using Sales.Api.Customers.DeleteCustomer;
-using Sales.Api.Customers.GetCustomer;
+using Sales.Api.Features.Customers.CreateCustomer;
+using Sales.Api.Features.Customers.DeleteCustomer;
+using Sales.Api.Features.Customers.GetCustomer;
 using Sales.Application.Customers.CreateCustomer;
 using Sales.Application.Customers.DeleteCustomer;
 using Sales.Application.Customers.GetCustomer;
 
-namespace Sales.Api.Customers;
+namespace Sales.Api.Features.Customers;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -25,10 +25,10 @@ public class CreateCustomerHandler : IRequestHandler<CreateCustomerCommand, Crea
         if (!validationResult.IsValid)
             throw new ValidationException(validationResult.Errors.ToString());
 
-        var user = _mapper.Map<Customer>(command);
+        var customer = _mapper.Map<Customer>(command);
 
-        var createdUser = await _customerRepository.CreateAsync(user, cancellationToken);
-        var result = _mapper.Map<CreateCustomerResult>(createdUser);
+        var createdCustomer = await _customerRepository.CreateAsync(customer, cancellationToken);
+        var result = _mapper.Map<CreateCustomerResult>(createdCustomer);
         return result;
     }
 }

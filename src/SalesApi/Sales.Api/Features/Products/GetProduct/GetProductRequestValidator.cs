@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace Sales.Api.Products.GetProduct;
+namespace Sales.Api.Features.Products.GetProduct;
 
 public class GetProductRequestValidator : AbstractValidator<GetProductRequest>
 {

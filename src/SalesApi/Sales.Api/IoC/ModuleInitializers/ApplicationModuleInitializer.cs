@@ -1,5 +1,4 @@
-﻿using Customers.Api.IoC;
-using MassTransit;
+﻿using MassTransit;
 using Sales.Application;
 using Sales.Application.Events;
 using Sales.Domain.Events;

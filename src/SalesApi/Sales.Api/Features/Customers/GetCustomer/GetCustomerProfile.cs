@@ -1,7 +1,7 @@
 using AutoMapper;
 using Sales.Application.Customers.GetCustomer;
 
-namespace Sales.Api.Customers.GetCustomer;
+namespace Sales.Api.Features.Customers.GetCustomer;
 
 public class GetCustomerProfile : Profile
 {

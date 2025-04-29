@@ -2,11 +2,11 @@ namespace Sales.Domain.Entities;
 
 public class Product
 {
-    public Guid Id { get; private set; }
-    public string Name { get; private set; } = default!;
-    public string Category { get; private set; } = default!;
-    public string Description { get; private set; } = default!;
-    public string ImageFile { get; private set; } = default!;
+    public Guid Id { get; }
+    public string Name { get; private set; }
+    public string Category { get; private set; }
+    public string Description { get; private set; }
+    public string ImageFile { get; private set; }
     public decimal Price { get; private set; }
     public DateTime CreatedAt { get; private set; }
     public DateTime? UpdatedAt { get; private set; }

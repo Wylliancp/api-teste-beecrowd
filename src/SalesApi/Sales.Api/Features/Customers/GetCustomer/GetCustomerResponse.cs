@@ -1,8 +1,8 @@
-namespace Sales.Api.Customers.GetCustomer;
+namespace Sales.Api.Features.Customers.GetCustomer;
 
 public class GetCustomerResponse
 {
-      public Guid Id { get; set; }
+      public Guid Id { get; init; }
 
-      public string Name { get; set; } = string.Empty;
+      public string Name { get; init; } = string.Empty;
 }

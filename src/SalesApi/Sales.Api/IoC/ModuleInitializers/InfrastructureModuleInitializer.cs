@@ -1,5 +1,4 @@
-﻿using Customers.Api.IoC;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Sales.Domain.Repositories;
 using Sales.Infrastructure;
 using Sales.Infrastructure.Repositories;
@@ -17,7 +16,6 @@ public class InfrastructureModuleInitializer : IModuleInitializer
                 b => b.MigrationsAssembly("Sales.Infrastructure")
             )
         );
-        // builder.Services.AddScoped<DbContext>(provider => provider.GetRequiredService<DefaultContext>());
         builder.Services.AddScoped<IProductRepository, ProductRepository>();
         builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
         builder.Services.AddScoped<ISaleRepository, SaleRepository>();

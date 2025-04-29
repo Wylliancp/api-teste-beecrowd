@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 namespace Sales.Test.Entities;
 
 public sealed class CustomerTest

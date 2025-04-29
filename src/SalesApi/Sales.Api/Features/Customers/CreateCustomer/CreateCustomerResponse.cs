@@ -1,6 +1,6 @@
-namespace Sales.Api.Customers.CreateCustomer;
+namespace Sales.Api.Features.Customers.CreateCustomer;
 
 public class CreateCustomerResponse
 {
-   public Guid Id { get; set; }
+   public Guid Id { get; init; }
 }

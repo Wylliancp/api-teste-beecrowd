@@ -14,14 +14,14 @@ public class GetSaleResponse
         TotalPrice = totalPrice;
         Items = items;
     }
-    public Guid Id { get; set; }
+    public Guid Id { get; private set; }
     public string SaleNumber { get; private set; }
     public DateTime SaleDate { get; private set; }
     public Guid CustomerId { get; private set; }
     public Guid BranchId { get; private set; }
-    public decimal TotalPrice { get; set; }
-    // public StatusSale Status { get; set; }
-    public List<GetSaleItemResponse> Items { get; set; }
+    public decimal TotalPrice { get; private set; }
+    // public StatusSale Status { get; set; }//TODO VERIFICAR
+    public List<GetSaleItemResponse> Items { get; private set; }
 }
 
 public class GetSaleItemResponse
@@ -37,14 +37,14 @@ public class GetSaleItemResponse
         SaleId = saleId;
     }
 
-    public Guid Id { get; set; }
-    public Guid ProductId { get; set; }
-    public int Quantity { get; set; }
-    public decimal UnitPrice { get; set; }
-    public decimal ValueMonetaryTaxApplied { get; set; }
-    public decimal Total { get; set; }
-    public Guid SaleId { get; set; }
-    // public StatusSale Status { get; set; } = default!;
+    public Guid Id { get; private set; }
+    public Guid ProductId { get; private set; }
+    public int Quantity { get; private set; }
+    public decimal UnitPrice { get; private set; }
+    public decimal ValueMonetaryTaxApplied { get; private set; }
+    public decimal Total { get; private set; }
+    public Guid SaleId { get; private set; }
+    // public StatusSale Status { get; set; } = default!;TODO VERIFICAR
 }
 
 

@@ -4,7 +4,7 @@ namespace Sales.Api.Common;
 
 public class ApiResponse
 {
-    public bool Success { get; set; }
-    public string Message { get; set; } = string.Empty;
-    public IEnumerable<ValidationErrorDetail> Errors { get; set; } = [];
+    public bool Success { get; init; }
+    public string Message { get; init; } = string.Empty;
+    public IEnumerable<ValidationErrorDetail> Errors { get; init; } = [];
 }

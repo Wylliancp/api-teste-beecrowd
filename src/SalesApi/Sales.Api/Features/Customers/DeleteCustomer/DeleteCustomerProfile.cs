@@ -1,7 +1,7 @@
 using AutoMapper;
 using Sales.Application.Customers.DeleteCustomer;
 
-namespace Sales.Api.Customers.DeleteCustomer;
+namespace Sales.Api.Features.Customers.DeleteCustomer;
 
 public class DeleteCustomerProfile : Profile
 {

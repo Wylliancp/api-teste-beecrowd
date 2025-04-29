@@ -1,6 +1,4 @@
-﻿using Customers.Api.IoC;
-
-namespace Sales.Api.IoC.ModuleInitializers
+﻿namespace Sales.Api.IoC.ModuleInitializers
 {
     public class WebApiModuleInitializer : IModuleInitializer
     {

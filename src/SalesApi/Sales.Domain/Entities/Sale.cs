@@ -4,11 +4,7 @@ namespace Sales.Domain.Entities;
 
 public class Sale
 {
-    public Sale()
-    {
-            
-    }
-    
+    public Sale() { }
     public Sale(Guid customerId, List<SaleItem> items)
     {
         Id = Guid.NewGuid();
@@ -16,7 +12,7 @@ public class Sale
         BranchId = Guid.NewGuid();
         SaleNumber = new Random().Next(100000, 999999).ToString();
         SaleDate = DateTime.UtcNow;
-        Status = StatusSale.NOT_CANCELLED;
+        Status = StatusSale.NotCancelled;
         Items = items;
         PurchasesAbove4IdenticalItemsHaveIvatax();
         PurchasesBetween10And20IdenticalItemsHaveSpecialiva();
@@ -27,17 +23,15 @@ public class Sale
     public DateTime SaleDate { get; private set; }
     public Guid CustomerId { get; private set; }
     public Guid BranchId { get; private set; }
-    public List<SaleItem> Items { get; set; } = new();
+    public List<SaleItem> Items { get; init; } = new();
     
     public decimal TotalPrice  => Items.Sum(x => x.UnitPrice * x.Quantity) 
                                   - Items.Sum(x => x.ValueMonetaryTaxApplied);
+    public StatusSale Status { get; private set; }
     
-    public StatusSale Status { get; private set; } = default!;
-
-
     public void CancelledSaleStatus()
     {
-        Status = StatusSale.CANCELLED;
+        Status = StatusSale.Cancelled;
     }
 
     private void PurchasesAbove4IdenticalItemsHaveIvatax()

@@ -1,6 +1,6 @@
 ﻿using Sales.Api.IoC.ModuleInitializers;
 
-namespace Customers.Api.IoC;
+namespace Sales.Api.IoC;
 
 public static class DependencyResolver
 {

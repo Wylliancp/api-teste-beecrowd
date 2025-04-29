@@ -1,7 +1,7 @@
 using AutoMapper;
 using Sales.Application.Products.GetProducts;
 
-namespace Sales.Api.Products.GetProducts;
+namespace Sales.Api.Features.Products.GetProducts;
 
 public class GetProductsProfile : Profile
 {
